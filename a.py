@@ -1,5 +1,7 @@
 from tkinter import *
 import random as rd
+import sys
+
 r = Tk()
 r.title("TETRIS!!")
 c = Canvas(r,height='500',width='500',bg='#808080')
@@ -94,7 +96,7 @@ def sqrr(x,y,st):
 def shape(x,y):
     global c_s,s,cc,clrs,spd,temp_ll
     shapes = ['sqr','line','left_hump','right_hump','2_hump','mid_hump','s','z']
-    s = rd.choice(shapes)
+    s = "line"
     cc = clrs[shapes.index(s)]
     if temp_ll == 0:
         temp_ll = 1
