@@ -99,7 +99,7 @@ def tetris():
         return temp_r
 
     def check_l():
-        global c_s
+        nonlocal c_s
         temp_l = 1
         for i in c_s:
             a = i[0]
